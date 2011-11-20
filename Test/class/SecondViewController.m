@@ -59,7 +59,7 @@
     [self.view addSubview:imageView];
     [imageView release];
      
-    
+    /*
     //初始化label  
     //UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0,0,0,0)];
     //设置自动行数与字符换行  
@@ -76,6 +76,7 @@
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 20, 280, labelsize.height)];
     label.text = s;
     [self.view addSubview:label];
+     */
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
