@@ -47,6 +47,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 5.0) {
+        [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationBg"] forBarMetrics:UIBarMetricsDefault];
+    } else {
+        CALayer *navLayer = self.navigationController.navigationBar.layer;
+        navLayer.masksToBounds = NO;
+        navLayer.shadowColor = [UIColor blackColor].CGColor;
+        navLayer.shadowOffset = CGSizeMake(0.0, 1.0);
+        navLayer.shadowOpacity = 0.35f;
+        navLayer.shouldRasterize = YES;
+    }
+    [self.navigationController.navigationBar setBackgroundColor:[UIColor clearColor]];
     
     self.nurseViewController = [[[NurseViewController alloc] initWithNibName:@"NurseViewController" bundle:nil] autorelease];
 }
