@@ -75,6 +75,7 @@
 		6589EC561696D9BC00C61D77 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6589EC551696D9BC00C61D77 /* libsqlite3.dylib */; };
 		6589EC581696D9FB00C61D77 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6589EC571696D9FB00C61D77 /* CoreData.framework */; };
 		659338801698360100DEF9FE /* DictionaryValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6593387F1698360100DEF9FE /* DictionaryValue.m */; };
+		65A57F3A16AC06B5009D9063 /* navigationBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A57F3916AC06B5009D9063 /* navigationBg@2x.png */; };
 		65E0553C1699734700150BE2 /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E0553A1699734700150BE2 /* PickerViewController.m */; };
 		65E0553D1699734700150BE2 /* PickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65E0553B1699734700150BE2 /* PickerViewController.xib */; };
 /* End PBXBuildFile section */
@@ -212,6 +213,7 @@
 		6589EC571696D9FB00C61D77 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		6593387E1698360100DEF9FE /* DictionaryValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictionaryValue.h; sourceTree = "<group>"; };
 		6593387F1698360100DEF9FE /* DictionaryValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictionaryValue.m; sourceTree = "<group>"; };
+		65A57F3916AC06B5009D9063 /* navigationBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationBg@2x.png"; sourceTree = "<group>"; };
 		65E055371699639D00150BE2 /* TestProcotol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestProcotol.h; sourceTree = "<group>"; };
 		65E055391699734700150BE2 /* PickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
 		65E0553A1699734700150BE2 /* PickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
@@ -362,6 +364,7 @@
 		6589EBBA1696C43000C61D77 /* imgs */ = {
 			isa = PBXGroup;
 			children = (
+				65A57F3916AC06B5009D9063 /* navigationBg@2x.png */,
 				6589EBBB1696C43000C61D77 /* y_section_bar@2x.png */,
 			);
 			path = imgs;
@@ -568,6 +571,7 @@
 				657AEEA916991C1F006C59B3 /* DelegateViewController.xib in Resources */,
 				65E0553D1699734700150BE2 /* PickerViewController.xib in Resources */,
 				650CA77C169B0E5A00C80CDC /* CustomPickerViewController.xib in Resources */,
+				65A57F3A16AC06B5009D9063 /* navigationBg@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
