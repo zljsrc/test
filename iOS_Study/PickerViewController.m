@@ -37,12 +37,25 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    //
+    UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];[backButton setFrame:CGRectMake(0, 0, 44, 32)];
+    [backButton setImage:[UIImage imageNamed:@"backButtonPressed"] forState:UIControlStateNormal];
+    [backButton addTarget:self action:@selector(backAction:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *backBarButton = [[UIBarButtonItem alloc] initWithCustomView:backButton];
+    [self.navigationItem setLeftBarButtonItem:backBarButton];
+    [backBarButton release];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)backAction:(id)sender
+{
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 //PickerView显示控制
