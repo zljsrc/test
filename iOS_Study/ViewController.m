@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TextViewController.h"
 
 @interface ViewController ()
 
@@ -110,6 +111,12 @@
 {
     CustomPickerViewController *customPickerViewController = [[[CustomPickerViewController alloc] initWithNibName:@"CustomPickerViewController" bundle:nil] autorelease];
     [self.navigationController pushViewController:customPickerViewController animated:YES];
+}
+
+- (IBAction)selectTextView:(id)sender
+{
+    TextViewController *textViewController = [[[TextViewController alloc] initWithNibName:@"TextViewController" bundle:nil]autorelease];
+    [self.navigationController pushViewController:textViewController animated:YES];
 }
 
 //

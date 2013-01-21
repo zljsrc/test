@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		650CA77B169B0E5A00C80CDC /* CustomPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650CA779169B0E5A00C80CDC /* CustomPickerViewController.m */; };
 		650CA77C169B0E5A00C80CDC /* CustomPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 650CA77A169B0E5A00C80CDC /* CustomPickerViewController.xib */; };
+		6568B51716AD166E0035B6A3 /* TextViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6568B51616AD166E0035B6A3 /* TextViewDelegate.m */; };
+		6568B51D16AD17230035B6A3 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6568B51B16AD17230035B6A3 /* TextViewController.m */; };
+		6568B51E16AD17230035B6A3 /* TextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6568B51C16AD17230035B6A3 /* TextViewController.xib */; };
 		657AEEA816991C1F006C59B3 /* DelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 657AEEA616991C1F006C59B3 /* DelegateViewController.m */; };
 		657AEEA916991C1F006C59B3 /* DelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 657AEEA716991C1F006C59B3 /* DelegateViewController.xib */; };
 		6589EB6A1696AA4800C61D77 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6589EB691696AA4800C61D77 /* UIKit.framework */; };
@@ -95,6 +98,11 @@
 		650CA778169B0E5A00C80CDC /* CustomPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPickerViewController.h; sourceTree = "<group>"; };
 		650CA779169B0E5A00C80CDC /* CustomPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPickerViewController.m; sourceTree = "<group>"; };
 		650CA77A169B0E5A00C80CDC /* CustomPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomPickerViewController.xib; sourceTree = "<group>"; };
+		6568B51516AD166E0035B6A3 /* TextViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewDelegate.h; sourceTree = "<group>"; };
+		6568B51616AD166E0035B6A3 /* TextViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewDelegate.m; sourceTree = "<group>"; };
+		6568B51A16AD17230035B6A3 /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
+		6568B51B16AD17230035B6A3 /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
+		6568B51C16AD17230035B6A3 /* TextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextViewController.xib; sourceTree = "<group>"; };
 		657AEEA516991C1F006C59B3 /* DelegateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateViewController.h; sourceTree = "<group>"; };
 		657AEEA616991C1F006C59B3 /* DelegateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelegateViewController.m; sourceTree = "<group>"; };
 		657AEEA716991C1F006C59B3 /* DelegateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DelegateViewController.xib; sourceTree = "<group>"; };
@@ -254,6 +262,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6568B51916AD16810035B6A3 /* View&Controller */ = {
+			isa = PBXGroup;
+			children = (
+				65E055391699734700150BE2 /* PickerViewController.h */,
+				65E0553A1699734700150BE2 /* PickerViewController.m */,
+				65E0553B1699734700150BE2 /* PickerViewController.xib */,
+				650CA778169B0E5A00C80CDC /* CustomPickerViewController.h */,
+				650CA779169B0E5A00C80CDC /* CustomPickerViewController.m */,
+				650CA77A169B0E5A00C80CDC /* CustomPickerViewController.xib */,
+				657AEEA516991C1F006C59B3 /* DelegateViewController.h */,
+				657AEEA616991C1F006C59B3 /* DelegateViewController.m */,
+				657AEEA716991C1F006C59B3 /* DelegateViewController.xib */,
+				6589EC0D1696C43100C61D77 /* NurseCell.h */,
+				6589EC0E1696C43100C61D77 /* NurseCell.m */,
+				6589EC0F1696C43100C61D77 /* NurseCell.xib */,
+				6589EC101696C43100C61D77 /* NurseRequest.h */,
+				6589EC111696C43100C61D77 /* NurseRequest.m */,
+				6589EC431696C5F100C61D77 /* NurseViewController.h */,
+				6589EC441696C5F100C61D77 /* NurseViewController.m */,
+				6589EC451696C5F100C61D77 /* NurseViewController.xib */,
+				6568B51A16AD17230035B6A3 /* TextViewController.h */,
+				6568B51B16AD17230035B6A3 /* TextViewController.m */,
+				6568B51C16AD17230035B6A3 /* TextViewController.xib */,
+			);
+			name = "View&Controller";
+			sourceTree = "<group>";
+		};
 		6589EB5A1696AA4800C61D77 = {
 			isa = PBXGroup;
 			children = (
@@ -295,37 +330,23 @@
 		6589EB711696AA4800C61D77 /* iOS_Study */ = {
 			isa = PBXGroup;
 			children = (
-				6593387E1698360100DEF9FE /* DictionaryValue.h */,
-				6593387F1698360100DEF9FE /* DictionaryValue.m */,
 				6589EB7A1696AA4800C61D77 /* AppDelegate.h */,
 				6589EB7B1696AA4800C61D77 /* AppDelegate.m */,
+				6593387E1698360100DEF9FE /* DictionaryValue.h */,
+				6593387F1698360100DEF9FE /* DictionaryValue.m */,
+				6589EC4C1696CF2E00C61D77 /* ErrorRecord.h */,
+				6589EC4D1696CF2E00C61D77 /* ErrorRecord.m */,
 				6589EBBA1696C43000C61D77 /* imgs */,
 				6589EB831696AA4800C61D77 /* iOS_Study.xcdatamodeld */,
 				6589EBBC1696C43000C61D77 /* Libs */,
-				6589EC0D1696C43100C61D77 /* NurseCell.h */,
-				6589EC0E1696C43100C61D77 /* NurseCell.m */,
-				6589EC0F1696C43100C61D77 /* NurseCell.xib */,
-				6589EC101696C43100C61D77 /* NurseRequest.h */,
-				6589EC111696C43100C61D77 /* NurseRequest.m */,
-				6589EC431696C5F100C61D77 /* NurseViewController.h */,
-				6589EC441696C5F100C61D77 /* NurseViewController.m */,
-				6589EC451696C5F100C61D77 /* NurseViewController.xib */,
 				6589EB721696AA4800C61D77 /* Supporting Files */,
+				65E055371699639D00150BE2 /* TestProcotol.h */,
+				6568B51516AD166E0035B6A3 /* TextViewDelegate.h */,
+				6568B51616AD166E0035B6A3 /* TextViewDelegate.m */,
+				6568B51916AD16810035B6A3 /* View&Controller */,
 				6589EBA41696B10500C61D77 /* ViewController.h */,
 				6589EBA51696B10500C61D77 /* ViewController.m */,
 				6589EBA61696B10500C61D77 /* ViewController.xib */,
-				6589EC4C1696CF2E00C61D77 /* ErrorRecord.h */,
-				6589EC4D1696CF2E00C61D77 /* ErrorRecord.m */,
-				657AEEA516991C1F006C59B3 /* DelegateViewController.h */,
-				657AEEA616991C1F006C59B3 /* DelegateViewController.m */,
-				657AEEA716991C1F006C59B3 /* DelegateViewController.xib */,
-				65E055371699639D00150BE2 /* TestProcotol.h */,
-				65E055391699734700150BE2 /* PickerViewController.h */,
-				65E0553A1699734700150BE2 /* PickerViewController.m */,
-				65E0553B1699734700150BE2 /* PickerViewController.xib */,
-				650CA778169B0E5A00C80CDC /* CustomPickerViewController.h */,
-				650CA779169B0E5A00C80CDC /* CustomPickerViewController.m */,
-				650CA77A169B0E5A00C80CDC /* CustomPickerViewController.xib */,
 			);
 			path = iOS_Study;
 			sourceTree = "<group>";
@@ -576,6 +597,7 @@
 				650CA77C169B0E5A00C80CDC /* CustomPickerViewController.xib in Resources */,
 				65A57F3A16AC06B5009D9063 /* navigationBg@2x.png in Resources */,
 				65A57F3D16AC0CB6009D9063 /* backButtonPressed@2x.png in Resources */,
+				6568B51E16AD17230035B6A3 /* TextViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -653,6 +675,8 @@
 				657AEEA816991C1F006C59B3 /* DelegateViewController.m in Sources */,
 				65E0553C1699734700150BE2 /* PickerViewController.m in Sources */,
 				650CA77B169B0E5A00C80CDC /* CustomPickerViewController.m in Sources */,
+				6568B51716AD166E0035B6A3 /* TextViewDelegate.m in Sources */,
+				6568B51D16AD17230035B6A3 /* TextViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

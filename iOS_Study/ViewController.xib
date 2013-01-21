@@ -128,7 +128,7 @@
 								<string key="NSFrame">{{34, 220}, {252, 44}}</string>
 								<reference key="NSSuperview" ref="991667738"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView"/>
+								<reference key="NSNextKeyView" ref="892739929"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -136,6 +136,29 @@
 								<int key="IBUIContentVerticalAlignment">0</int>
 								<int key="IBUIButtonType">1</int>
 								<string key="IBUINormalTitle">Custiom PickerView</string>
+								<reference key="IBUIHighlightedTitleColor" ref="342296614"/>
+								<object class="NSColor" key="IBUINormalTitleColor">
+									<int key="NSColorSpace">1</int>
+									<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
+								</object>
+								<reference key="IBUINormalTitleShadowColor" ref="470512301"/>
+								<reference key="IBUIFontDescription" ref="418645136"/>
+								<reference key="IBUIFont" ref="646347561"/>
+							</object>
+							<object class="IBUIButton" id="892739929">
+								<reference key="NSNextResponder" ref="991667738"/>
+								<int key="NSvFlags">292</int>
+								<string key="NSFrame">{{34, 282}, {252, 44}}</string>
+								<reference key="NSSuperview" ref="991667738"/>
+								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView"/>
+								<string key="NSReuseIdentifierKey">_NS:9</string>
+								<bool key="IBUIOpaque">NO</bool>
+								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+								<int key="IBUIContentHorizontalAlignment">0</int>
+								<int key="IBUIContentVerticalAlignment">0</int>
+								<int key="IBUIButtonType">1</int>
+								<string key="IBUINormalTitle">自定义键盘</string>
 								<reference key="IBUIHighlightedTitleColor" ref="342296614"/>
 								<object class="NSColor" key="IBUINormalTitleColor">
 									<int key="NSColorSpace">1</int>
@@ -244,6 +267,15 @@
 					</object>
 					<int key="connectionID">24</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">selectTextView:</string>
+						<reference key="source" ref="892739929"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">26</int>
+				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<array key="orderedObjects">
@@ -280,6 +312,7 @@
 							<reference ref="696094528"/>
 							<reference ref="189272512"/>
 							<reference ref="972858702"/>
+							<reference ref="892739929"/>
 						</array>
 						<reference key="parent" ref="191373211"/>
 					</object>
@@ -303,6 +336,11 @@
 						<reference key="object" ref="972858702"/>
 						<reference key="parent" ref="991667738"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">25</int>
+						<reference key="object" ref="892739929"/>
+						<reference key="parent" ref="991667738"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -316,12 +354,13 @@
 				<string key="15.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="19.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="22.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="25.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 			</dictionary>
 			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">24</int>
+			<int key="maxID">26</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -333,6 +372,7 @@
 						<string key="selectDelegateView:">id</string>
 						<string key="selectPickerView:">id</string>
 						<string key="selectTableView:">id</string>
+						<string key="selectTextView:">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="actionInfosByName">
 						<object class="IBActionInfo" key="selectCustomPickerView:">
@@ -349,6 +389,10 @@
 						</object>
 						<object class="IBActionInfo" key="selectTableView:">
 							<string key="name">selectTableView:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="selectTextView:">
+							<string key="name">selectTextView:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 					</dictionary>
