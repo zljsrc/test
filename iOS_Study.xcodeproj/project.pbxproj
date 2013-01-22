@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		650CA77B169B0E5A00C80CDC /* CustomPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650CA779169B0E5A00C80CDC /* CustomPickerViewController.m */; };
 		650CA77C169B0E5A00C80CDC /* CustomPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 650CA77A169B0E5A00C80CDC /* CustomPickerViewController.xib */; };
+		654B906916AE6A360031A5A8 /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 654B906716AE6A360031A5A8 /* libMobClickLibrary.a */; };
 		6568B51716AD166E0035B6A3 /* TextViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6568B51616AD166E0035B6A3 /* TextViewDelegate.m */; };
 		6568B51D16AD17230035B6A3 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6568B51B16AD17230035B6A3 /* TextViewController.m */; };
 		6568B51E16AD17230035B6A3 /* TextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6568B51C16AD17230035B6A3 /* TextViewController.xib */; };
@@ -98,6 +99,8 @@
 		650CA778169B0E5A00C80CDC /* CustomPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPickerViewController.h; sourceTree = "<group>"; };
 		650CA779169B0E5A00C80CDC /* CustomPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPickerViewController.m; sourceTree = "<group>"; };
 		650CA77A169B0E5A00C80CDC /* CustomPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomPickerViewController.xib; sourceTree = "<group>"; };
+		654B906716AE6A360031A5A8 /* libMobClickLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobClickLibrary.a; sourceTree = "<group>"; };
+		654B906816AE6A360031A5A8 /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
 		6568B51516AD166E0035B6A3 /* TextViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewDelegate.h; sourceTree = "<group>"; };
 		6568B51616AD166E0035B6A3 /* TextViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewDelegate.m; sourceTree = "<group>"; };
 		6568B51A16AD17230035B6A3 /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
@@ -246,6 +249,7 @@
 				6589EB6A1696AA4800C61D77 /* UIKit.framework in Frameworks */,
 				6589EB6C1696AA4800C61D77 /* Foundation.framework in Frameworks */,
 				6589EB6E1696AA4800C61D77 /* CoreGraphics.framework in Frameworks */,
+				654B906916AE6A360031A5A8 /* libMobClickLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +266,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		654B906616AE6A360031A5A8 /* UMAnalytics_Sdk_OpenUDID */ = {
+			isa = PBXGroup;
+			children = (
+				654B906716AE6A360031A5A8 /* libMobClickLibrary.a */,
+				654B906816AE6A360031A5A8 /* MobClick.h */,
+			);
+			path = UMAnalytics_Sdk_OpenUDID;
+			sourceTree = "<group>";
+		};
 		6568B51916AD16810035B6A3 /* View&Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -397,6 +410,7 @@
 		6589EBBC1696C43000C61D77 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				654B906616AE6A360031A5A8 /* UMAnalytics_Sdk_OpenUDID */,
 				6589EBBD1696C43000C61D77 /* ASIHTTPRequest */,
 				6589EBD41696C43000C61D77 /* EGORefresh */,
 				6589EBD91696C43000C61D77 /* json */,
@@ -784,6 +798,10 @@
 				GCC_PREFIX_HEADER = "iOS_Study/iOS_Study-Prefix.pch";
 				INFOPLIST_FILE = "iOS_Study/iOS_Study-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/iOS_Study/Libs/UMAnalytics_Sdk_OpenUDID\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "C3C2FC7D-8A8A-426E-B530-4744553ACE99";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C3C2FC7D-8A8A-426E-B530-4744553ACE99";
@@ -799,6 +817,10 @@
 				GCC_PREFIX_HEADER = "iOS_Study/iOS_Study-Prefix.pch";
 				INFOPLIST_FILE = "iOS_Study/iOS_Study-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/iOS_Study/Libs/UMAnalytics_Sdk_OpenUDID\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

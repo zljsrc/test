@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "TextViewController.h"
+#import "MobClick.h"
 
 @interface ViewController ()
 
@@ -80,6 +81,8 @@
 //切换到专家列表的TableView
 - (IBAction)selectTableView: (id)sender
 {
+    [MobClick event:@"zljsrc001"];
+    
     if (self.nurseViewController==nil) {
         self.nurseViewController = [[[NurseViewController alloc] initWithNibName:@"NurseViewController" bundle:nil] autorelease];
     }
@@ -89,6 +92,9 @@
 //切换到代理模式演示的View
 - (IBAction)selectDelegateView:(id)sender
 {
+    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:@"book", @"type", @"3", @"price", nil];
+    [MobClick event:@"zljsrc002" attributes:dict];
+    
     DelegateViewController *delegateViewController = [[[DelegateViewController alloc] initWithNibName:@"DelegateViewController" bundle:nil] autorelease];
     delegateViewController.delegate = self;
     [self.navigationController pushViewController:delegateViewController animated:YES];
@@ -97,6 +103,8 @@
 //协议实现方法
 - (void)changeButtionText:(id)data
 {
+    [MobClick event:@"zljsrc003" label:@"zljsrc"];
+    
     [_delegateViewButton setTitle:data forState:UIControlStateNormal];
 }
 

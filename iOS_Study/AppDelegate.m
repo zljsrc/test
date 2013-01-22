@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MobClick.h"
 
 @implementation AppDelegate
 
@@ -31,6 +32,8 @@
     self.window.rootViewController = self.navController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    [MobClick startWithAppkey:@"50f9291752701543d5000010" reportPolicy:SENDWIFIONLY channelId:nil];
     return YES;
 }
 
