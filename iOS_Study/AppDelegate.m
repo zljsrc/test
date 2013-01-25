@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MobClick.h"
+#import "UMSocialData.h"
 
 @implementation AppDelegate
 
@@ -34,6 +35,8 @@
     [self.window makeKeyAndVisible];
     
     [MobClick startWithAppkey:@"50f9291752701543d5000010" reportPolicy:SENDWIFIONLY channelId:nil];
+    [UMSocialData setAppKey:@"50f9291752701543d5000010"];
+    
     return YES;
 }
 

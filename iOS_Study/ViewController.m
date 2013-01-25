@@ -10,6 +10,7 @@
 #import "TextViewController.h"
 #import "MobClick.h"
 #import "ASILogViewController.h"
+#import "UMShareViewController.h"
 
 @interface ViewController ()
 
@@ -133,10 +134,8 @@
 //友盟分享
 - (IBAction)UMShare:(id)sender
 {
-//    UMSocialData *socialData = [[UMSocialData alloc] initWithIdentifier:@"your identifier"];
-//    UMSocialBar *socialBar = [[UMSocialBar alloc] initWithUMSocialData:socialData withViewController:self];
-//    socialBar.center = CGPointMake(160, 390);
-//    [self.view addSubview:socialBar];
+    UMShareViewController *umShareViewController = [[UMShareViewController alloc]initWithNibName:@"UMShareViewController" bundle:nil];
+    [self.navigationController pushViewController:umShareViewController animated:YES];
 }
 
 - (IBAction)selectASILog:(id)sender
