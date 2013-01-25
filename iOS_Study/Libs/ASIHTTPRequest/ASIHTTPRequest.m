@@ -23,6 +23,8 @@
 #import "ASIDataDecompressor.h"
 #import "ASIDataCompressor.h"
 
+#import "SQLiteLog.h"
+
 // Automatically set on build
 NSString *ASIHTTPRequestVersion = @"v1.8.1-61 2011-09-19";
 
@@ -761,8 +763,20 @@ static NSOperationQueue *sharedQueue = nil;
 	if (!data) {
 		return nil;
 	}
+    
+    NSString *rs = [[[NSString alloc] initWithBytes:[data bytes] length:[data length] encoding:[self responseEncoding]] autorelease];
+    //log start
+    if (ASI_DEBUG) {
+        NSString *description = [NSString stringWithFormat:@"%@", self.url];
+        NSString *extraInfo = [NSString stringWithFormat:@"RESULT:%@\nPOST_DATA:", rs];
+        for (NSDictionary *i in (NSArray *)[self postData]) {
+            extraInfo = [NSString stringWithFormat:@"%@&%@=%@", extraInfo, [i objectForKey:@"key"], [i objectForKey:@"value"]];
+        }
+        [SQLiteLog insertActionLogWithType:0 description:description extraInfo:extraInfo];
+    }
+    //log end
 	
-	return [[[NSString alloc] initWithBytes:[data bytes] length:[data length] encoding:[self responseEncoding]] autorelease];
+	return rs;
 }
 
 - (BOOL)isResponseCompressed

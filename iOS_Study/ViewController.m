@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "TextViewController.h"
 #import "MobClick.h"
+#import "ASILogViewController.h"
 
 @interface ViewController ()
 
@@ -115,16 +116,33 @@
     [self.navigationController pushViewController:pickerViewController animated:YES];
 }
 
+//自定义pickerview演示页面
 - (IBAction)selectCustomPickerView:(id)sender
 {
     CustomPickerViewController *customPickerViewController = [[[CustomPickerViewController alloc] initWithNibName:@"CustomPickerViewController" bundle:nil] autorelease];
     [self.navigationController pushViewController:customPickerViewController animated:YES];
 }
 
+//textview代理演示页面
 - (IBAction)selectTextView:(id)sender
 {
     TextViewController *textViewController = [[[TextViewController alloc] initWithNibName:@"TextViewController" bundle:nil]autorelease];
     [self.navigationController pushViewController:textViewController animated:YES];
+}
+
+//友盟分享
+- (IBAction)UMShare:(id)sender
+{
+//    UMSocialData *socialData = [[UMSocialData alloc] initWithIdentifier:@"your identifier"];
+//    UMSocialBar *socialBar = [[UMSocialBar alloc] initWithUMSocialData:socialData withViewController:self];
+//    socialBar.center = CGPointMake(160, 390);
+//    [self.view addSubview:socialBar];
+}
+
+- (IBAction)selectASILog:(id)sender
+{
+    ASILogViewController *asiLogViewController = [[[ASILogViewController alloc] initWithNibName:@"ASILogViewController" bundle:nil] autorelease];
+    [self.navigationController pushViewController:asiLogViewController animated:YES];
 }
 
 //
